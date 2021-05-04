@@ -33,6 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-email-protect
   - jekyll-target-blank
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -65,3 +66,8 @@ markdown: kramdown
 exclude:
   - README.md
   - LICENSE.md
+
+# Paagination
+paginate: 10
+permalink: /blogs/:year/:title/
+paginate_path: /blogs/page:num/
