@@ -42,17 +42,17 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
     <summary markdown="span">**PhD Researcher** • [The Pennsylvania State University](https://www.psu.edu/) • Aug'16 - May'21</summary>
     <ul>
         <li>
-            <strong>Security Extensions for RISC-V:</strong> Developed a RISC-V hardware accelerator platform for protection against 
-            common memory corruption vulnerabilities, such as, buffer overflows using hardware shadow stacks, PUF-based 
+            <strong>Security Extensions for RISC-V:</strong> Developed a RISC-V hardware accelerator platform for protection against
+            common memory corruption vulnerabilities, such as, buffer overflows using hardware shadow stacks, PUF-based
             randomized canaries, and hardware bounds checking.
         </li>
         <li>
-            <strong>Data Leakage Exploits using Hardware Trojans:</strong> Developed a hardware Trojan based system exploit that can 
+            <strong>Data Leakage Exploits using Hardware Trojans:</strong> Developed a hardware Trojan based system exploit that can
             leak data from a process’s address space and perform privilege escalation.
         </li>
         <li>
-            <strong>Camouflaged Gates for Reverse Engineering Prevention:</strong> Developed a multi-input multi-function 
-            camouflaged gate based on threshold voltage logic to prevent reverse engineering of circuits. Developed a 
+            <strong>Camouflaged Gates for Reverse Engineering Prevention:</strong> Developed a multi-input multi-function
+            camouflaged gate based on threshold voltage logic to prevent reverse engineering of circuits. Developed a
             charge-trap and NV-FeFET based camouflaged gate to thwart RE attacks involving untrusted foundries.
         </li>
     </ul>
@@ -62,11 +62,11 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
     <summary markdown="span">**Digital Design Engineer Intern** • [SiFive, Inc.](https://www.sifive.com) • May - Aug'19,'20</summary>
     <ul>
         <li>
-            <strong>Unified Overlay API:</strong> Prototyped a new unified API for overlay placement for peripheral CHISEL devices to 
+            <strong>Unified Overlay API:</strong> Prototyped a new unified API for overlay placement for peripheral CHISEL devices to
             facilitate faster and easier overlay instantiations for both FPGA and ASIC platforms.
         </li>
         <li>
-            <strong>SiFive Address Guard Extension Module:</strong> Designed security architectures for policy-based memory protection 
+            <strong>SiFive Address Guard Extension Module:</strong> Designed security architectures for policy-based memory protection
             in SiFive Core IPs. Implemented security module RTL using CHISEL and created system test code in C for design sanity checks.
         </li>
     </ul>
@@ -76,8 +76,8 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
     <summary markdown="span">**Software Engineer** • [Samsung R&D Institute India](https://research.samsung.com/sri-n) • Jun'14 - Dec'15</summary>
     <ul>
         <li>
-            <strong>Samsung Knox:</strong> Worked on development and commercialization of Samsung Knox, an enterprise mobile 
-            security solution by Samsung. Refined Knox application experience during OS upgrades for mobile devices. 
+            <strong>Samsung Knox:</strong> Worked on development and commercialization of Samsung Knox, an enterprise mobile
+            security solution by Samsung. Refined Knox application experience during OS upgrades for mobile devices.
             Performed automated upstream sanity checks of Knox containers.
         </li>
     </ul>
@@ -87,7 +87,7 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
     <summary markdown="span">**Summer Research Intern** • [Saha Institute of Nuclear Physics](https://www.saha.ac.in/web/summer-home) • Jun'14 - Dec'15</summary>
     <ul>
         <li>
-            <strong>Automated Rough Set Clustering:</strong> Implemented an automated unsupervised rough-set clustering 
+            <strong>Automated Rough Set Clustering:</strong> Implemented an automated unsupervised rough-set clustering
             methodology for pattern recognition. [Supervisor: <a href="https://www.saha.ac.in/cs/gautam.garai/">Dr. Gautam Garai</a>, Scientist ‘G’, Comp. Sc. Div., SINP]
         </li>
     </ul>
@@ -108,7 +108,7 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
             Set up dev environment and assignment submission infrastructure with version control to aid students.
         </li>
         <li>
-            Set up and assisted in various course logistics including setting up Microsoft Teams classroom to facilitate 
+            Set up and assisted in various course logistics including setting up Microsoft Teams classroom to facilitate
             classroom discussions during remote learning
         </li>
     </ul>
@@ -167,9 +167,14 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 * **A. De** et al., “Hardware Assisted Buffer Protection Mechanisms for Embedded RISC-V,” _IEEE Transactions on Computer Aided Design (**TCAD**)_, 2020
 * **A. De** et al., “HarTBleed: Using Hardware Trojans for Data Leakage Exploits,” _IEEE Transactions on VLSI (**TVLSI**)_, 2020
 * J. Jang, **A. De** et al., “Threshold-defined logic and interconnect for protection against reverse engineering,” _IEEE Transactions on Computer-Aided Design on Integrated Circuits and Systems (**TCAD**)_, 2018
-* J. Jang, **A. De** et al., “Threshold-defined logic and interconnect for protection against reverse engineering,” _IEEE Transactions on Computer-Aided Design on Integrated Circuits and Systems (**TCAD**)_, 2018
-* B. Sen, A. Nag, **A. De** el al., “Towards the hierarchical design of multilayer QCA logic circuit,” _Journal of Computational 
+* B. Sen, A. Nag, **A. De** el al., “Towards the hierarchical design of multilayer QCA logic circuit,” _Journal of Computational
 Science (**JCS**)_, 2015
+{% for paper in site.papers %}
+    {% if paper.type == "journal" %}
+        <h3>{{ paper.title }}</h3>
+        {{ paper.authors | slice: 0, paper.authors.size - 1 | join: ", " | append: " and " | append: paper.authors.last }}
+    {% endif %}
+{% endfor %}
 
 ### Conference papers
 * A. De et al., “Hands-On Cybersecurity Curriculum using a Modular Training Kit,” American Society for Engineering Education (ASEE), 2020
