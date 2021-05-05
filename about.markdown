@@ -163,17 +163,15 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 ## <a id="publications">📜 Publications</a>
 
 ### Journals
-* M.N.I. Khan, **A. De** et al., “Cache-Out: Leaking Cache Memory Using Hardware Trojan,” _IEEE Transactions on VLSI (**TVLSI**)_, 2020.
-* **A. De** et al., “Hardware Assisted Buffer Protection Mechanisms for Embedded RISC-V,” _IEEE Transactions on Computer Aided Design (**TCAD**)_, 2020
-* **A. De** et al., “HarTBleed: Using Hardware Trojans for Data Leakage Exploits,” _IEEE Transactions on VLSI (**TVLSI**)_, 2020
-* J. Jang, **A. De** et al., “Threshold-defined logic and interconnect for protection against reverse engineering,” _IEEE Transactions on Computer-Aided Design on Integrated Circuits and Systems (**TCAD**)_, 2018
-* B. Sen, A. Nag, **A. De** el al., “Towards the hierarchical design of multilayer QCA logic circuit,” _Journal of Computational
-Science (**JCS**)_, 2015
+
+
 {% for paper in site.papers %}
-    {% if paper.type == "journal" %}
-        <h3>{{ paper.title }}</h3>
-        {{ paper.authors | slice: 0, paper.authors.size - 1 | join: ", " | append: " and " | append: paper.authors.last }}
-    {% endif %}
+{% if paper.type == "journal" %}
+{% assign seclast = paper.authors.size | minus: 1 %}
+1. **{{ paper.title }}**<br>
+    {{ paper.authors | slice: 0, seclast | join: ", " | append: " and " | append: paper.authors.last }}<br>
+    {{ paper.date | date: "%B %Y" }}
+{% endif %}
 {% endfor %}
 
 ### Conference papers
