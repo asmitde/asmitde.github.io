@@ -8,8 +8,8 @@ profile:
     image: asmit_profile.jpg
 ---
 
-[Gradfolio](https://github.com/jitinnair1/gradfolio){:target="_blank"} is a responsive, dark-mode ready Jekyll theme designed keeping academia in mind. The easiest way to install the theme is to fork it using GitHub. Check the README file for [instructions](https://github.com/jitinnair1/gradfolio#installation){:target="_blank"}.
+Hi, I'm Asmit. Welcome to my really fancy website /s. 
 
-If you want to use this space to write your biography here, edit the `index.md` file. You can put a picture in, too. Rename your picture to `profile.png` and put it in the `assets/images/` folder.
+I am a computer engineer, specializing in the intersection of hardware and software. I design hardware security solutions for protecting embedded systems. I studied at [Penn State](https://www.eecs.psu.edu/), where I researched on protection of RISC-V systems ans supply chain. Oh, and I also have a PhD. Finally, I am a strong proponent of digital security and good digital citizenship.
 
-The social-icons footer can be used to link profiles from GitHub, OrcID and ReasearchGate aprart form the usual Twitter, LinkedIn and Facebook. You can add your user ID in the `_config.yml` file to link your accounts.
+Outside of work and studies, I spend most of my time flying. Okay, not really flying IRL (I don't have a licence, yet 😉; hopefully that will change soon...), but simulated flying. Yes, I am an aviation geek, and have been interested in aviation ever since my friend in school introduced me to Microsoft Flight Simulator X. 15 years and much 💲💲 later, flight simulation has grown to be my biggest hobby and obsession. I now have a pseudo home cockpit to satisfy my flying needs 😄. Drop in later for my soon to be released flightsim related blog if you're interested.
