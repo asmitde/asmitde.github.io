@@ -84,11 +84,11 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 </details>
 
 <details>
-    <summary markdown="span">**Summer Research Intern** • [Saha Institute of Nuclear Physics](http://www.saha.ac.in/web/summer-home) • Jun'14 - Dec'15</summary>
+    <summary markdown="span">**Summer Research Intern** • [Saha Institute of Nuclear Physics](https://www.saha.ac.in/web/summer-home) • Jun'14 - Dec'15</summary>
     <ul>
         <li>
             <strong>Automated Rough Set Clustering:</strong> Implemented an automated unsupervised rough-set clustering 
-            methodology for pattern recognition. [Supervisor: <a href="http://www.saha.ac.in/cs/gautam.garai/">Dr. Gautam Garai</a>, Scientist ‘G’, Comp. Sc. Div., SINP]
+            methodology for pattern recognition. [Supervisor: <a href="https://www.saha.ac.in/cs/gautam.garai/">Dr. Gautam Garai</a>, Scientist ‘G’, Comp. Sc. Div., SINP]
         </li>
     </ul>
 </details>
