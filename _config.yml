@@ -21,7 +21,7 @@
 title: Asmit De
 email: asmit.de@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  PhD and stuff | I do things securely
+  PhD and stuff | I do things
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://asmitde.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: asmitde
@@ -69,5 +69,4 @@ exclude:
 
 # Paagination
 paginate: 10
-permalink: /blogs/:year/:title/
-paginate_path: /blogs/page:num/
+paginate_path: "/news/page:num/"
