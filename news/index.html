@@ -11,8 +11,8 @@ title: News
 <div>
   {% for post in paginator.posts %}
     {% if post.categories contains "news" %}
-    <h3><small>{{ post.date | date_to_string: "ordinal", "US" }}</small></h3>
-    {{post.excerpt}}
+    <strong>🗞️ {{ post.date | date_to_string: "ordinal", "US" }}</strong>
+    {{ post.excerpt }}
     {% endif %}
   {% endfor %}
 </div>
