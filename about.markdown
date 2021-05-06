@@ -138,7 +138,7 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 </details>
 
 <details>
-    <summary markdown="span">**Instructor** • [Programming Resource Centre](https://www.usf.edu/engineering/cse/undergraduate/prc-info.aspx) • Jan - Aug'16</summary>
+    <summary markdown="span">**Instructor** • [Programming Resource Centre, USF](https://www.usf.edu/engineering/cse/undergraduate/prc-info.aspx) • Jan - Aug'16</summary>
     <ul>
         <li>Assisted students from various disciplines with programming concepts.</li>
     </ul>
