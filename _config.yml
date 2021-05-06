@@ -20,10 +20,9 @@
 
 title: Asmit De
 email: asmit.de@outlook.com
-description: >- # this means to ignore newlines until "baseurl:"
-  PhD and stuff | I do things
+description: PhD and stuff | I do things
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://asmitde.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.asmitde.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: asmitde
 github_username:  asmitde
 
