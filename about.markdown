@@ -169,14 +169,24 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 <ol reversed>
 {% assign papers = site.papers | sort: "date" | reverse %}
 {% for paper in papers %}
-{% if paper.type == "journal" %}
-<li><strong><a href="{{- paper.link -}}">{{ paper.title }}</a></strong><br>
-    {% assign seclast = paper.authors.size | minus: 1 %}
-    {{ paper.authors | slice: 0, seclast | join: ", " | append: " and " | append: paper.authors.last }}<br>
-    <small>{{ paper.publication }}</small><br>
-    <small>{{ paper.date | date: "%B %Y" }}</small>
-</li>
-{% endif %}
+    {% if paper.type == "journal" %}
+        <li><strong><a href="{{- paper.link -}}">{{ paper.title }}</a></strong><br>
+            {% assign seclast = paper.authors.size | minus: 1 %}
+            {% for ai in (0..paper.authors.size) %}
+                {% if paper.authors[ai] == "Asmit De" %}
+                    <strong>{{ paper.authors[ai] }}</strong>
+                {% else %}
+                    {{ paper.authors[ai] }}
+                {% endif %}
+                {% if ai < seclast %}
+                    •
+                {% endif %}
+            {% endfor %}
+            <br>
+            <small>{{ paper.publication }}</small><br>
+            <small>{{ paper.date | date: "%B %Y" }}</small>
+        </li>
+    {% endif %}
 {% endfor %}
 </ol>
 </details>
@@ -189,14 +199,24 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 <ol reversed>
 {% assign papers = site.papers | sort: "date" | reverse %}
 {% for paper in papers %}
-{% if paper.type == "conference" %}
-<li><strong><a href="{{- paper.link -}}">{{ paper.title }}</a></strong><br>
-    {% assign seclast = paper.authors.size | minus: 1 %}
-    {{ paper.authors | slice: 0, seclast | join: ", " | append: " and " | append: paper.authors.last }}<br>
-    <small>{{ paper.publication }}</small><br>
-    <small>{{ paper.date | date: "%B %Y" }}</small>
-</li>
-{% endif %}
+    {% if paper.type == "conference" %}
+        <li><strong><a href="{{- paper.link -}}">{{ paper.title }}</a></strong><br>
+            {% assign seclast = paper.authors.size | minus: 1 %}
+            {% for ai in (0..paper.authors.size) %}
+                {% if paper.authors[ai] == "Asmit De" %}
+                    <strong>{{ paper.authors[ai] }}</strong>
+                {% else %}
+                    {{ paper.authors[ai] }}
+                {% endif %}
+                {% if ai < seclast %}
+                    •
+                {% endif %}
+            {% endfor %}
+            <br>
+            <small>{{ paper.publication }}</small><br>
+            <small>{{ paper.date | date: "%B %Y" }}</small>
+        </li>
+    {% endif %}
 {% endfor %}
 </ol>
 </details>
