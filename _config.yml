@@ -59,6 +59,7 @@ plugins:
 linkedin: "asmitde"
 researchgate: "asmit_de"
 orcid: "0000-0002-8175-1337"
+googlescholar: "uk3fb9gAAAAJ"
 
 highlighter: rouge
 markdown: kramdown

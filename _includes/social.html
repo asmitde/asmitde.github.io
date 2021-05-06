@@ -28,6 +28,13 @@
     </a>
     {%- endif -%}
 
+    {%- if site.googlescholar -%}
+    <a title="{{ _locale_string_follow | replace: '[NAME]', 'GoogleScholar' }}" class="social-button googlescholar"
+        href="https://scholar.google.com/citations?hl=en&user={{ site.googlescholar }}" itemprop="sameAs" target="_blank">
+        <i class="ai ai-google-scholar"></i>
+    </a>
+    {%- endif -%}
+
     {%- if site.orcid -%}
     <a title="{{ _locale_string_follow | replace: '[NAME]', 'Orcid' }}" class="social-button orcid"
         href="https://orcid.org/{{ site.orcid }}" itemprop="sameAs" target="_blank">
