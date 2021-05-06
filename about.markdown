@@ -179,14 +179,17 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 </ol>
 
 ### Conference papers
-* A. De et al., “Hands-On Cybersecurity Curriculum using a Modular Training Kit,” American Society for Engineering Education (ASEE), 2020
-* K. Nagarajan et al., “Recent advances in Emerging Technology-based Security Primitives, Attacks and Mitigation,” International Midwest Symposium on Circuits and Systems (MWSCAS), 2020
-* N. Gattu et al., “Power side channel attack analysis and detection,” International Conference on Computer Aided Design (ICCAD), 2020
-* W. Zhang et al., “ArmorPLC: A Platform for Cyber Security Threat Assessments for PLCs,” International Conference on Production Research (ICPR), 2020
-* K. Nagarajan et al., “TrappeD: DRAM trojan designs for information leakage and fault injection attacks,”Microprocessor Test and Verification Conference (MTV), 2019
-* A. De et al., “FIXER: Flow Integrity Extensions in Embedded RISC-V,” Design Automation and Test in Europe(DATE), 2019
-* A. De et al., “CTCG: Charge-trap based camouflaged gates for reverse engineering prevention,” IEEE International Symposium on Hardware Oriented Security and Trust (HOST), 2018
-* A. De and S. Ghosh, “Preventing Reverse Engineering using threshold voltage defined multi-input camouflaged gates,” IEEE International Symposium on Technologies for Homeland Security (HST), 2017
-* J. Jang et al., “Recent trends in Intellectual Property (IP) protection from reverse engineering,” Microprocessor Test and Verification Conference (MTV), 2016
-* S. Ghosh et al., “Security and privacy threats to on-chip Non-Volatile Memories and countermeasures,” IEEE/ACM International Conference on Computer-Aided Design (ICCAD), 2016
-* B. Sen et al., “Multilayer design of QCA multiplexer,” Annual IEEE India Conference (INDICON), 2013
+
+<ol reversed>
+{% assign papers = site.papers | sort: "date" | reverse %}
+{% for paper in papers %}
+{% if paper.type == "conference" %}
+<li><strong><a href="{{- paper.link -}}">{{ paper.title }}</a></strong><br>
+    {% assign seclast = paper.authors.size | minus: 1 %}
+    {{ paper.authors | slice: 0, seclast | join: ", " | append: " and " | append: paper.authors.last }}<br>
+    <small>{{ paper.publication }}</small><br>
+    <small>{{ paper.date | date: "%B %Y" }}</small>
+</li>
+{% endif %}
+{% endfor %}
+</ol>
