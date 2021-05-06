@@ -140,7 +140,7 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 <details>
     <summary markdown="span">**Instructor** • [Programming Resource Centre](https://www.usf.edu/engineering/cse/undergraduate/prc-info.aspx) • Jan - Aug'16</summary>
     <ul>
-        <li>TAssisted students from various disciplines with programming concepts.</li>
+        <li>Assisted students from various disciplines with programming concepts.</li>
     </ul>
 </details>
 
@@ -159,10 +159,12 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 
 
 
-
 ## <a id="publications">📜 Publications</a>
 
 ### Journals
+
+<details>
+    <summary markdown="span">Total: {{ site.papers | where: "type", "journal" | size }}</summary>
 
 <ol reversed>
 {% assign papers = site.papers | sort: "date" | reverse %}
@@ -177,8 +179,12 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 {% endif %}
 {% endfor %}
 </ol>
+</details>
 
-### Conference papers
+### Conferences
+
+<details>
+    <summary markdown="span">Total: {{ site.papers | where: "type", "conference" | size }}</summary>
 
 <ol reversed>
 {% assign papers = site.papers | sort: "date" | reverse %}
@@ -193,3 +199,4 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 {% endif %}
 {% endfor %}
 </ol>
+</details>
