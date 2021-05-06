@@ -164,15 +164,19 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 
 ### Journals
 
-
-{% for paper in site.papers %}
+<ol reversed>
+{% assign papers = site.papers | sort: "date" | reverse %}
+{% for paper in papers %}
 {% if paper.type == "journal" %}
-{% assign seclast = paper.authors.size | minus: 1 %}
-1. **{{ paper.title }}**<br>
+<li><strong><a href="{{- paper.link -}}">{{ paper.title }}</a></strong><br>
+    {% assign seclast = paper.authors.size | minus: 1 %}
     {{ paper.authors | slice: 0, seclast | join: ", " | append: " and " | append: paper.authors.last }}<br>
-    {{ paper.date | date: "%B %Y" }}
+    <small>{{ paper.publication }}</small><br>
+    <small>{{ paper.date | date: "%B %Y" }}</small>
+</li>
 {% endif %}
 {% endfor %}
+</ol>
 
 ### Conference papers
 * A. De et al., “Hands-On Cybersecurity Curriculum using a Modular Training Kit,” American Society for Engineering Education (ASEE), 2020
