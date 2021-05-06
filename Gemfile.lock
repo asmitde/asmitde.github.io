@@ -83,6 +83,7 @@ DEPENDENCIES
   jekyll-email-protect (~> 1.1.0)
   jekyll-feed (~> 0.12)
   jekyll-paginate (~> 1.1.0)
+  jekyll-seo-tag (~> 2.7.1)
   jekyll-target-blank (~> 2.0.0)
   minima (~> 2.5)
   tzinfo (~> 1.2)

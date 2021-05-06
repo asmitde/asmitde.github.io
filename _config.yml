@@ -34,6 +34,7 @@ plugins:
   - jekyll-email-protect
   - jekyll-target-blank
   - jekyll-paginate
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
