@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /blog/categories/
+title: Categories
+---
+
+<div class="article-list">
+    {% assign categories = site.categories | sort %}
+    {% for category_blob in categories %}
+    {% capture category %}{{category_blob | first }}{% endcapture %}
+    <div>
+        <div id="{{category}}"></div>
+        <h2>
+            {% case category %}
+            {% when "aviation" %}
+            ✈️&nbsp;
+            {% when "updates" %}
+            🗞️&nbsp;
+            {% endcase %}
+            {{ category }}
+        </h2>
+
+        <ul style="list-style: circle;">
+        {% for post in site.categories[category] %}
+          <li>
+              <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+              | {{post.date | date_to_string: "ordinal", "US"}}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+</div>
