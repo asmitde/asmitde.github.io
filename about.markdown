@@ -12,16 +12,19 @@ Jump to: [Education](#education) • [Skills](#skills) • [Experience](#work-ex
 <br>
 
 ## <a id="about-me">🙋‍♂️ About Me</a>
-I am currently pursuing PhD in Computer Science and Engineering under the guidance of Dr Swaroop Ghosh in the Lab of Green and secure Integrated Circuit Systems ([LOGICS](https://personal.psu.edu/szg212)) at Penn State University. My research is on developing security designs in hardware for protecting RISC-V based SoCs and their supply chain.
+I am a SoC design engineer at [SiFive](https://www.sifive.com), enabling development of silicon at the speed of software. I work on developing configurable generators in CHISEL to design complex RISC-V SoC IPs. I recently completed my PhD in Computer Science and Engineering under the guidance of Dr Swaroop Ghosh in the Lab of Green and secure Integrated Circuit Systems ([LOGICS](https://personal.psu.edu/szg212)) at Penn State University, where my research was on developing security designs in hardware for protecting RISC-V based SoCs and their supply chain.
 
 <br>
 
 
 ## <a id="education">👨‍🎓 Education</a>
 
-**Ph.D.** • [The Pennsylvania State University](https://www.psu.edu/) | • May'21
-
-**B.Tech.** • [National Institute of Technology Durgapur](https://nitdgp.ac.in) | • Jun'14
+<details>
+    <summary markdown="span">**Ph.D.** • [The Pennsylvania State University](https://www.psu.edu/) • May'21</summary>
+</details>
+<details>
+    <summary markdown="span">**B.Tech.** • [National Institute of Technology Durgapur](https://nitdgp.ac.in) • Jun'14</summary>
+</details>
 
 <br>
 
@@ -37,6 +40,14 @@ I am currently pursuing PhD in Computer Science and Engineering under the guidan
 
 ## <a id="work-experience">👨‍💼 Research and Work Experience</a>
 
+<details>
+    <summary markdown="span">**Senior SoC Generator Design Engineer** • [SiFive, Inc.](https://www.sifive.com) • May'21 - _present_</summary>
+    <ul>
+        <li>
+            Working on designing scalable generators for RISC-V SoCs.
+        </li>
+    </ul>
+</details>
 
 <details>
     <summary markdown="span">**PhD Researcher** • [The Pennsylvania State University](https://www.psu.edu/) • Aug'16 - May'21</summary>
